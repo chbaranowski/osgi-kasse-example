@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!DOCTYPE faces-config PUBLIC
+  "-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.1//EN"
+  "http://java.sun.com/dtd/web-facesconfig_1_1.dtd">
+
+<faces-config>
+
+	<application>
+		<variable-resolver>org.springframework.web.jsf.DelegatingVariableResolver</variable-resolver>
+	</application>
+	
+		<navigation-rule>
+		<display-name>sellers</display-name>
+		<from-view-id>/sellerList.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>new_seller</from-outcome>
+			<to-view-id>/newSeller.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>sellers</display-name>
+		<from-view-id>/sellerList.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>edit_seller</from-outcome>
+			<to-view-id>/editSeller.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>seller</display-name>
+		<from-view-id>/newSeller.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>save_seller</from-outcome>
+			<to-view-id>/sellerList.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>seller</display-name>
+		<from-view-id>/editSeller.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>save_seller</from-outcome>
+			<to-view-id>/sellerList.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>seller</display-name>
+		<from-view-id>/newSellerList.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>ok</from-outcome>
+			<to-view-id>/sellerList.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>seller</display-name>
+		<from-view-id>/cashPoint.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>customers</from-outcome>
+			<to-view-id>/sellerList.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>seller</display-name>
+		<from-view-id>/cashPoint.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>position</from-outcome>
+			<to-view-id>/positionList.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>seller</display-name>
+		<from-view-id>/cashPoint.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>remote</from-outcome>
+			<to-view-id>/import.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>seller</display-name>
+		<from-view-id>/sellerList.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>newListCustomers</from-outcome>
+			<to-view-id>/newSellerList.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>seller</display-name>
+		<from-view-id>*</from-view-id>
+		<navigation-case>
+			<from-outcome>Kasse</from-outcome>
+			<to-view-id>/cashPoint.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+</faces-config>
