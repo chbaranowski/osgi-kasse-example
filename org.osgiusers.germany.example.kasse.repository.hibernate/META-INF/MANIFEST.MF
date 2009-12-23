@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Basar_kasse_repository_hibernate
+Bundle-SymbolicName: org.osgiusers.germany.example.kasse.repository.hibernate
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Import-Package: org.hibernate.dialect;version="3.3.2.GA",
+ org.springframework.orm.jpa;version="2.5.6.A",
+ org.springframework.orm.jpa.vendor;version="2.5.6.A"
