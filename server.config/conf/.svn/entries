@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="13851"
+   name=""
+   committed-date="2008-09-10T05:30:17.247862Z"
+   url="https://springframework.svn.sourceforge.net/svnroot/springframework/spring-osgi/trunk/samples/s2-repo-tomcat6/server-config/src/main/resources/conf"
+   last-author="azhurakousky"
+   kind="dir"
+   repos="https://springframework.svn.sourceforge.net/svnroot/springframework"
+   revision="13851"/>
+<entry
+   committed-rev="13851"
+   name="server.xml"
+   text-time="2008-09-10T02:43:47.000000Z"
+   committed-date="2008-09-10T05:30:17.247862Z"
+   checksum="bfc45fe6546b947940dbf67101db5ab3"
+   last-author="azhurakousky"
+   kind="file"/>
+</wc-entries>
