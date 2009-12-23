@@ -8,11 +8,14 @@
 <title>Verwaltung der Positionen des Basars</title>
 </head>
 <body>
+
+<img src="logo.jpg" width="50"/> 
+
 <f:view>
 	<h:form id="sellers">
 	    
 	    <p><h:commandLink value="Kasse" action="Kasse" immediate="true"/></p>
-	    <p><h1>Verwaltung der Positionen</h1></p>
+	    <p><h1>Positionen</h1></p>
 	    
 	    <p><h:messages /></p>
 	    
@@ -49,12 +52,6 @@
 			</h:column>
 			<h:column>
 				<f:facet name="header">
-                   <h:outputText value="Typ"/>
-                </f:facet> 
-                <h:outputText value="#{position.type}"/>
-			</h:column>
-			<h:column>
-				<f:facet name="header">
                    <h:outputText value="Verkäufer"/>
                 </f:facet> 
                 <h:outputText value="#{position.seller.name}"/>
@@ -66,19 +63,7 @@
                 <h:outputText value="#{position.seller.basarNumber}"/>
 			</h:column>
 		</h:dataTable>
-		
-		<h1>Storno</h1>
-		<h:messages></h:messages>
-		<p>
-			Basar Nummer:<br/>
-			<h:inputText required="true" validator="#{positionController.validateBasarNumber}" value="#{positionController.stornoBasarNumber}"></h:inputText>
-		</p>
-		<p>
-			Preis:<br/>
-			<h:inputText rendered="true" validator="#{positionController.validatePreis}" value="#{positionController.stornoPrice}"></h:inputText>
-		</p>
-		<p><h:commandButton value="Storno" action="#{positionController.stornoAction}"></h:commandButton></p>
-		
+				
 	</h:form>
 </f:view>
 </body>

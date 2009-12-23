@@ -8,6 +8,9 @@
 <title>Basar Kasse</title>
 </head>
 <body>
+
+<img src="logo.jpg" width="50"/> 
+
 <f:view>
 	<h:form id="cashPoint">
 			
@@ -95,7 +98,7 @@
 	
 		<p><b>Menü (weitere Funktionen)</b></p>
 		<p><h:commandLink immediate="true" value="Verkäufer Verwalten" action="customers"/></p>
-		<p><h:commandLink immediate="true" value="Positionen Verwalten" action="position"/></p>		
+		<p><h:commandLink immediate="true" value="Übersicht der Positionen" action="position"/></p>		
 	</h:form>
 </f:view>
 </body>

@@ -8,6 +8,9 @@
 <title>Verkäufer bearbeiten</title>
 </head>
 <body>
+
+<img src="logo.jpg" width="50"/> 
+
 <f:view>
 	<h:form id="seller">
 		<p><h:messages /></p>

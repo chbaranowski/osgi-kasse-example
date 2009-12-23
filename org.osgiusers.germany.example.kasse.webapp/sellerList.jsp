@@ -8,6 +8,9 @@
 <title>Verwaltung der Verkäufer des Basars</title>
 </head>
 <body>
+
+<img src="logo.jpg" width="50"/> 
+
 <f:view>
 	<h:form id="sellers">
 		
@@ -36,7 +39,6 @@
 		</h:dataTable>
 		
 		<p><h:commandButton id="newSeller"  value="Neuen Verkäufer anlegen" action="#{sellerController.newSellerAction}"/></p>
-		<p><h:commandButton id="newSellers" value="Liste Neuer Verkäufer anlegen" action="newListCustomers"/></p>
 		
 	</h:form>
 </f:view>
