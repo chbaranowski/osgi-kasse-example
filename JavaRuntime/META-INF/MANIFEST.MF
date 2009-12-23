@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JavaRuntime
+Bundle-SymbolicName: JavaRuntime
+Bundle-Version: 1.0.0.qualifier
+Fragment-Host: system.bundle
+Export-Package: com.sun.org.apache.xalan.internal.res;version="0.0.0", 
+ com.sun.org.apache.xml.internal.utils; version="0.0.0",
+ com.sun.org.apache.xpath.internal; version="0.0.0", 
+ com.sun.org.apache.xpath.internal.jaxp; version="0.0.0", 
+ com.sun.org.apache.xpath.internal.objects; version="0.0.0"
+ 
