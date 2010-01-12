@@ -13,8 +13,11 @@
 			http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd
 			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
 
+	
+	<context:property-placeholder location="classpath:basar/conf/database.properties" />
+
 	<bean id="jpaVendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
-		<property name="databasePlatform" value="org.hibernate.dialect.DerbyDialect"/>
+		<property name="databasePlatform" value="${jpa.databasePlatform}"/>
 		<property name="showSql" value="true" />
 		<property name="generateDdl" value="true" />
 	</bean>

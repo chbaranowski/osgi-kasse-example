@@ -9,4 +9,3 @@ Export-Package: com.sun.org.apache.xalan.internal.res;version="0.0.0",
  com.sun.org.apache.xpath.internal; version="0.0.0", 
  com.sun.org.apache.xpath.internal.jaxp; version="0.0.0", 
  com.sun.org.apache.xpath.internal.objects; version="0.0.0"
- 

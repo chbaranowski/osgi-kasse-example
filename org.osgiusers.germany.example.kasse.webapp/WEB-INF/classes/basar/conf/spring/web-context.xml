@@ -10,8 +10,8 @@
 	
 	<context:annotation-config />
 
-	<context:component-scan base-package="basar.web" />
+	<context:component-scan base-package="org.osgiusers.germany.example.basar.web" />
 	
-	<osgi:reference id="basarKasse" interface="basar.domain.logic.BasarKasseFacade"/>
-		
+	<bean class="org.springframework.osgi.extensions.annotation.ServiceReferenceInjectionBeanPostProcessor"/>
+			
 </beans>

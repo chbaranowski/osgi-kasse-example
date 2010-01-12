@@ -28,11 +28,38 @@
 	</properties>
 
 	<dependencies>
+
 		<dependency>
 			<groupId>org.eclipse.osgi</groupId>
 			<artifactId>org.eclipse.osgi</artifactId>
 			<version>${equinox.ver}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.eclipse.equinox</groupId>
+			<artifactId>org.eclipse.equinox.util</artifactId>
+			<version>1.0.100.v20090520-1800</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.eclipse.equinox</groupId>
+			<artifactId>org.eclipse.equinox.ds</artifactId>
+			<version>1.1.0.v20090520-1800</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.eclipse.osgi</groupId>
+			<artifactId>org.eclipse.osgi.services</artifactId>
+			<version>3.2.0.v20090520-1800</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.eclipse.equinox</groupId>
+			<artifactId>org.eclipse.equinox.common</artifactId>
+			<version>3.5.0.v20090520-1800</version>
+		</dependency>
+
+
 		<!-- Spring OSGi -->
 		<dependency>
 			<groupId>org.springframework.osgi</groupId>
@@ -49,6 +76,7 @@
 			<version>${spring.osgi.bundle.version}
 			</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.osgi</groupId>
 			<artifactId>org.springframework.osgi.io
@@ -56,6 +84,7 @@
 			<version>${spring.osgi.bundle.version}
 			</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.osgi</groupId>
 			<artifactId>org.springframework.osgi.mock
@@ -63,6 +92,7 @@
 			<version>${spring.osgi.bundle.version}
 			</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.osgi</groupId>
 			<artifactId>org.springframework.osgi.test
@@ -70,6 +100,7 @@
 			<version>${spring.osgi.bundle.version}
 			</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.osgi</groupId>
 			<artifactId>org.springframework.osgi.web
@@ -77,6 +108,7 @@
 			<version>${spring.osgi.bundle.version}
 			</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.osgi</groupId>
 			<artifactId>org.springframework.osgi.web.extender
@@ -86,22 +118,31 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.springframework.osgi</groupId>
+			<artifactId>org.springframework.osgi.extensions.annotation</artifactId>
+			<version>${spring.osgi.bundle.version}</version>
+		</dependency>
+
+		<dependency>
 			<groupId>org.objectweb.asm</groupId>
 			<artifactId>com.springsource.org.objectweb.asm
 			</artifactId>
 			<version>2.2.3</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.aopalliance</groupId>
 			<artifactId>com.springsource.org.aopalliance
 			</artifactId>
 			<version>1.0.0</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.junit</groupId>
-			<artifactId>com.springsource.junit</artifactId>
-			<version>3.8.2</version>
+			<artifactId>com.springsource.org.junit</artifactId>
+			<version>4.7.0</version>
 		</dependency>
+
 		<!--
 			Unfortunately, untill http://jira.springframework.org/browse/OSGI-564
 			is resolved we can't use BRITS provided Log4J and have to rely on
@@ -574,6 +615,13 @@
 			<url>http://maven.springframework.org/osgi
 			</url>
 		</repository>
+
+		<repository>
+			<id>wso2-maven2-repository</id>
+			<url>http://dist.wso2.org/maven2</url>
+		</repository>
+
+
 	</repositories>
 	<build>
 		<plugins>

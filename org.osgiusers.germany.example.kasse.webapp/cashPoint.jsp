@@ -13,7 +13,7 @@
 
 <f:view>
 	<h:form id="cashPoint">
-			
+	
 		<h1>Summe: <h:outputText id="summe" value="#{cashPointController.summe}"/> Euro</h1>
 		
 		<h:messages></h:messages>
@@ -99,6 +99,7 @@
 		<p><b>Menü (weitere Funktionen)</b></p>
 		<p><h:commandLink immediate="true" value="Verkäufer Verwalten" action="customers"/></p>
 		<p><h:commandLink immediate="true" value="Übersicht der Positionen" action="position"/></p>		
+		
 	</h:form>
 </f:view>
 </body>
