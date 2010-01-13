@@ -14,17 +14,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-
+@Service
 public class SaleServiceImpl implements SaleService {
 
 	private PositionDao positionDao;
 	
 	private SellerDao sellerDao;
 	
+	@Autowired
 	public void setPositionDao(PositionDao positionDao){
 		this.positionDao = positionDao;
 	}
 	
+	@Autowired
 	public void setSellerDao(SellerDao sellerDao){
 		this.sellerDao = sellerDao;
 	}

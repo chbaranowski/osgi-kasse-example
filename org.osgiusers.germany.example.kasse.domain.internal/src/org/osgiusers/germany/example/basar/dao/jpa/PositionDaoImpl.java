@@ -11,9 +11,10 @@ import org.osgiusers.germany.example.basar.domain.Configuration;
 import org.osgiusers.germany.example.basar.domain.Position;
 import org.osgiusers.germany.example.basar.domain.PositionKey;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-
+@Repository
 public class PositionDaoImpl implements PositionDao {
 
 	private Configuration configuration;

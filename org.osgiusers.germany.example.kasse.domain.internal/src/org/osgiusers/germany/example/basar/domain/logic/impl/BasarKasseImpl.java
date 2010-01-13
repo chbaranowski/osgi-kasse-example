@@ -11,8 +11,10 @@ import org.osgiusers.germany.example.basar.domain.PositionType;
 import org.osgiusers.germany.example.basar.domain.Sale;
 import org.osgiusers.germany.example.basar.domain.Seller;
 import org.osgiusers.germany.example.basar.domain.logic.BasarKasseFacade;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-
+@Service
 public class BasarKasseImpl implements BasarKasseFacade {
 
 	private PositionDao positionDao;
@@ -21,14 +23,17 @@ public class BasarKasseImpl implements BasarKasseFacade {
 	
 	private SaleService saleService;
 		
+	@Autowired
 	public void setPositionDao(PositionDao positionDao){
 		this.positionDao = positionDao;
 	}
 	
+	@Autowired
 	public void setSellerDao(SellerDao sellerDao){
 		this.sellerDao = sellerDao;
 	}
 	
+	@Autowired
 	public void setSaleService(SaleService saleService){
 		this.saleService = saleService;
 	}

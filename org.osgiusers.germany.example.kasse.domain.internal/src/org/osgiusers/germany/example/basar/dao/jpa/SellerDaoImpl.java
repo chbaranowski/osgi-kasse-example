@@ -8,9 +8,10 @@ import javax.persistence.Query;
 
 import org.osgiusers.germany.example.basar.dao.SellerDao;
 import org.osgiusers.germany.example.basar.domain.Seller;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-
+@Repository
 public class SellerDaoImpl implements SellerDao {
 
 	protected EntityManager entityManager;

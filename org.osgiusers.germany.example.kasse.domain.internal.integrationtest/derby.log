@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-2010-01-13 17:28:58.524 GMT:
- Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.1.1 - (764942): instance a816c00e-0126-28bb-20d9-0000001fcdd0
-on database directory D:\db\testDB  
+2010-01-13 18:19:09.477 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.1.1 - (764942): instance a816c00e-0126-28e9-130e-00000020a498
+on database directory D:\develop\git\osgi-kasse-example\org.osgiusers.germany.example.kasse.domain.internal.integrationtest\testDB  
 
 Database Class Loader started - derby.database.classpath=''
