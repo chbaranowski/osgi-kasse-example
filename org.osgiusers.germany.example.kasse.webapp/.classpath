@@ -5,7 +5,7 @@
 	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/jsf-api.jar"/>
 	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/jsf-impl.jar"/>
 	<classpathentry exported="true" kind="lib" path="WEB-INF/classes/"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/JVM 1.5.0 (MacOS X Default)"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="output" path="WEB-INF/classes"/>
 </classpath>
