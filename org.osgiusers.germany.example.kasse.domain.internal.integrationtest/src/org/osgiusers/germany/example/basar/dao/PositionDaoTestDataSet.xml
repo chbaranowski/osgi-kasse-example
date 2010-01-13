@@ -1,0 +1,40 @@
+<dataset>
+
+	<table name="seller">
+		<column>basarNumber</column>
+		<column>name</column>
+		<row>
+			<value>100</value>
+			<value>Test Kunde</value>
+		</row>
+	</table>
+
+	<table name="position">
+		<column>kasse</column>
+		<column>number</column>
+		<column>description</column>
+		<column>price</column>
+		<column>seller_basarNumber</column>
+		<column>type</column>
+		<column>createTime</column>
+		<row>
+			<value>kasseA</value>
+			<value>1</value>
+			<value>Hose</value>
+			<value>10.50</value>
+			<value>100</value>
+			<value>0</value>
+			<value>2007-09-27 18:35:18</value>
+		</row>
+		<row>
+			<value>kasseB</value>
+			<value>1</value>
+			<value>Hose</value>
+			<value>10.50</value>
+			<value>100</value>
+			<value>0</value>
+			<value>2009-09-27 18:35:18</value>
+		</row>
+	</table>
+
+</dataset>

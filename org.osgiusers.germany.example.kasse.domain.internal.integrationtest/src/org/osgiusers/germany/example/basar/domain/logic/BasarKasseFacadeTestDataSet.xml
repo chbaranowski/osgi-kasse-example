@@ -1,0 +1,29 @@
+<dataset>
+
+	<table name="seller">
+		<column>basarNumber</column>
+		<column>name</column>
+		<row>
+			<value>100</value>
+			<value>Test Kunde</value>
+		</row>
+		<row>
+			<value>101</value>
+			<value>Test Kunde</value>
+		</row>
+		<row>
+			<value>103</value>
+			<value>Test Kunde</value>
+		</row>
+	</table>
+
+	<table name="position">
+		<column>kasse</column>
+		<column>number</column>
+		<column>description</column>
+		<column>price</column>
+		<column>seller_basarNumber</column>
+		<column>type</column>
+	</table>
+
+</dataset>
